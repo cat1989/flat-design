@@ -1,0 +1,13 @@
+.button {
+    border: 0;
+    border-radius: 0;
+    background-color: transparent;
+    padding: 0 px2rem($font-size-base);
+    font-size: px2rem($font-size-medium);
+    color: $color-primary;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}

@@ -1,0 +1,49 @@
+.navigation-bar {
+    min-height: px2rem(44);
+    background-color: $color-white;
+    flex-shrink: 0;
+    position: relative;
+    .top-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: px2rem($font-size-medium);
+        font-weight: 600;
+        height: px2rem(44);
+        padding: 0 px2rem($font-size-base);
+    }
+    &.large {
+        .top-item {
+            margin-top: px2rem(44);
+            font-size: px2rem(24);
+            justify-content: flex-start;
+        }
+    }
+    &.translucent {
+        min-height: 0;
+    }
+    .back-item, .right-bar-item {
+        height: px2rem(44);
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 0;
+    }
+    .back-item {
+        left: 0;
+    }
+    .right-bar-item {
+        right: 0;
+    }
+    &:after {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: px2rem(1);
+        transform: scale(1, .5);
+        transform-origin: center bottom;
+        background-color: $border-color-base;
+        content: '';
+    }
+}

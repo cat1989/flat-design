@@ -1,0 +1,24 @@
+.search-bar {
+    height: px2rem(44);
+    background-color: $color-white;
+    padding: 0 px2rem($font-size-base);
+    display: flex;
+    align-items: center;
+    .text-field {
+        flex: 1;
+        height: px2rem(28);
+        border-radius: px2rem($border-radius-base * 2);
+        background-color: $border-color-extra-light;
+        padding: 0 px2rem($border-radius-base);
+    }
+    .icon {
+        fill: $color-text-placeholder;
+        width: px2rem($font-size-base);
+        height: px2rem($font-size-base);
+        margin-right: px2rem($border-radius-base);
+    }
+    .cancel-button {
+        flex-shrink: 0;
+        padding-right: 0;
+    }
+}

@@ -1,0 +1,29 @@
+.tab-bar {
+    flex-shrink: 0;
+    display: flex;
+    background-color: $color-white;
+    position: relative;
+    &:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: px2rem(1);
+        transform: scale(1, .5);
+        content: '';
+        background-color: $border-color-base;
+    }
+    .button {
+        height: px2rem(49);
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: px2rem(10);
+        color: $color-text-placeholder;
+        &.active {
+            color: $color-primary;
+        }
+    }
+}

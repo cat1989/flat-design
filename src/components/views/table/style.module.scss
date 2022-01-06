@@ -1,0 +1,46 @@
+.table {
+    .header, .footer {
+        font-size: px2rem($font-size-small);
+        color: $color-text-placeholder;
+        padding: 0 px2rem($font-size-base);
+    }
+    .header {
+        padding-top: px2rem($font-size-base);
+        padding-bottom: px2rem($border-radius-base);
+        position: relative;
+        &:after {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: px2rem(1);
+            transform: scale(1, .5);
+            transform-origin: center bottom;
+            background-color: $border-color-base;
+            content: '';
+        }
+    }
+    .footer {
+        padding-top: px2rem($border-radius-base);
+        padding-bottom: px2rem($font-size-base);
+    }
+    .table-rows {
+        background-color: $color-white;
+    }
+    &.inset {
+        margin: 0 px2rem($font-size-base);
+        .header {
+            &:after {
+                display: none;
+            }
+        }
+        .table-rows {
+            border-radius: px2rem($border-radius-base * 2);
+            li:last-child {
+                &:before {
+                    display: none;
+                }
+            }
+        }
+    }
+}

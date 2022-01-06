@@ -1,0 +1,6 @@
+@mixin base-typography {
+    font-size: px2rem($font-size-base);
+    color: $color-text-primary;
+    line-height: $font-line-height-primary;
+    font-weight: $font-weight-primary;
+}
